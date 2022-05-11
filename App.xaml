@@ -1,0 +1,9 @@
+﻿<Application x:Class="P2_Ap2_Melvin_2008_0385.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:P2_Ap2_Melvin_2008_0385"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

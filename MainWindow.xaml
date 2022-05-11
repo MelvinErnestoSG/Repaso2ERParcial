@@ -1,0 +1,23 @@
+﻿<Window x:Class="P2_Ap2_Melvin_2008_0385.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P2_Ap2_Melvin_2008_0385"
+        mc:Ignorable="d"
+         Title="Ventana De Menu" Height="250" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <Menu Height="20">
+                <MenuItem Header="Registros">
+                    <MenuItem x:Name="RegistroProyectosMenuItem" Header="Registro de Proyectos" Click="RegistroProyectosMenuItem_Click"/>
+                </MenuItem>
+
+                <MenuItem Header="Consultas">
+                    <MenuItem x:Name="ConsultaProyectosMenuItem" Header="Consulta de Proyectos" Click="ConsultaProyectosMenuItem_Click"/>
+                    <MenuItem x:Name="ConsultaTiposTareasMenuItem" Header="Consulta de Tipos de Tareas" Click="ConsultaTiposTareasMenuItem_Click"/>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+    </Grid>
+</Window>

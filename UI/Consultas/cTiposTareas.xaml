@@ -1,0 +1,41 @@
+﻿<Window x:Class="P2_Ap2_Melvin_2008_0385.UI.Consultas.cTiposTareas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P2_Ap2_Melvin_2008_0385.UI.Consultas"
+        mc:Ignorable="d"
+         Title="Consultas de Tareas" Height="405" Width="460" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Campo a filtrar"/>
+                <Label Content="Criterio" Margin="26,0"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <ComboBox x:Name="FiltroComboBox" Width="100" Height="20">
+                    <ComboBoxItem Content="Id"/>
+                    <ComboBoxItem Content="Tipo de Tarea"/>
+                    <ComboBoxItem Content="Requerimiento"/>
+                    <ComboBoxItem Content="Tiempo"/>
+                </ComboBox>
+                
+                <TextBox x:Name="FiltroTextBox" Margin="20,0" Height="20" Width="120"/>
+
+                <Button x:Name="ConsultarButton" Margin="105,0" Click="ConsultarButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/Buscar.png" Height="20"/>
+                        <Label Content="Buscar"/>
+                    </StackPanel>
+                </Button>
+
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Left" Margin="5">
+                <DataGrid x:Name="DatosDataDrid" Height="290" Width="435" IsEnabled="False"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
