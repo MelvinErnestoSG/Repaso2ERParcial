@@ -1,1 +1,1 @@
-﻿# Segundo Parcial de Aplicada I
+﻿# Review of the Second Partial of Applied I
